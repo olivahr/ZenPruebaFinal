@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZenSite | Planes</title>
+
+<meta name="description" content="Planes de diseño web profesional. Precios claros para landing pages, sitios web y tiendas online.">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:Segoe UI,Arial,sans-serif;
+  background:#000;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* BACKGROUND */
+@media(min-width:769px){
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:url('background.png') center/cover no-repeat;
+    z-index:-2;
+  }
+}
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.6),rgba(0,0,0,.95));
+  z-index:-1;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 30px;
+  position:relative;
+  z-index:10;
+}
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:600;
+  opacity:.85;
+}
+nav a:hover{opacity:1}
+
+/* TRANSLATOR */
+#google_translate_element{
+  position:fixed;
+  top:15px;
+  right:15px;
+  z-index:9999;
+}
+.goog-logo-link,
+.goog-te-gadget span{display:none!important}
+.goog-te-gadget{color:transparent!important}
+.goog-te-combo{
+  background:#000;
+  color:#00cfff;
+  border:1px solid #00cfff;
+  padding:6px 10px;
+  border-radius:6px;
+  font-weight:700;
+}
+
+/* MAIN */
+main{
+  padding:120px 20px 100px;
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+}
+h1{
+  font-size:clamp(36px,6vw,64px);
+  margin-bottom:20px;
+}
+.subtitle{
+  max-width:780px;
+  margin:0 auto 70px;
+  font-size:19px;
+  line-height:1.6;
+  opacity:.9;
+}
+
+/* PLANS */
+.plans{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+}
+
+.plan{
+  position:relative;
+  background:rgba(255,255,255,.06);
+  padding:44px 34px;
+  border-radius:30px;
+  backdrop-filter:blur(14px);
+  transition:.4s;
+}
+.plan:hover{
+  transform:translateY(-14px);
+  box-shadow:0 0 45px rgba(0,200,255,.55);
+}
+
+/* FEATURED */
+.plan.featured{
+  outline:2px solid rgba(0,200,255,.6);
+}
+.badge{
+  position:absolute;
+  top:-18px;
+  right:20px;
+  background:#00cfff;
+  color:#000;
+  padding:6px 18px;
+  border-radius:20px;
+  font-size:13px;
+  font-weight:900;
+}
+
+/* CONTENT */
+.plan h2{
+  font-size:28px;
+  margin-bottom:10px;
+}
+.price{
+  font-size:46px;
+  font-weight:900;
+  color:#00cfff;
+  margin:18px 0;
+}
+.plan p{
+  font-size:18px;
+  line-height:1.6;
+  opacity:.9;
+}
+.plan ul{
+  list-style:none;
+  margin:26px 0;
+  text-align:left;
+}
+.plan li{
+  margin:12px 0;
+  font-size:17px;
+}
+
+/* BUTTON */
+.plan a{
+  display:inline-block;
+  margin-top:30px;
+  padding:16px 48px;
+  border-radius:50px;
+  background:#00cfff;
+  color:#000;
+  font-weight:900;
+  text-decoration:none;
+  transition:.3s;
+}
+.plan a:hover{
+  transform:scale(1.05);
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:22px;
+  right:22px;
+  width:60px;
+  height:60px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  color:#fff;
+  text-decoration:none;
+  z-index:3000;
+}
+</style>
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<header>
+  <strong>ZenSite</strong>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="demo.html">Demos</a>
+    <a href="planes.html">Planes</a>
+    <a href="nosotros.html">Nosotros</a>
+  </nav>
+</header>
+
+<main>
+
+<h1>Planes y precios</h1>
+<p class="subtitle">
+Planes claros, sin pagos mensuales ocultos.
+Diseñados según el nivel de presencia digital que tu negocio necesita.
+</p>
+
+<section class="plans">
+
+  <!-- PLAN Z -->
+  <div class="plan">
+    <h2>Plan Z</h2>
+    <div class="price">$190</div>
+    <p>Ideal para negocios que necesitan una presencia clara y profesional.</p>
+    <ul>
+      <li>✔ Landing page profesional</li>
+      <li>✔ Diseño moderno y limpio</li>
+      <li>✔ Optimizada para móvil</li>
+      <li>✔ Botón de contacto directo</li>
+    </ul>
+    <a href="https://wa.me/15027942412" target="_blank">Contáctanos</a>
+  </div>
+
+  <!-- PLAN Z+ -->
+  <div class="plan featured">
+    <span class="badge">MÁS VENDIDO</span>
+    <h2>Plan Z+</h2>
+    <div class="price">$380</div>
+    <p>Para marcas que buscan verse sólidas y convertir visitas.</p>
+    <ul>
+      <li>✔ Web multi-sección</li>
+      <li>✔ Diseño premium</li>
+      <li>✔ Velocidad optimizada</li>
+      <li>✔ Preparada para SEO</li>
+    </ul>
+    <a href="https://wa.me/15027942412" target="_blank">Contáctanos</a>
+  </div>
+
+  <!-- PLAN PREMIUM -->
+  <div class="plan">
+    <h2>Z Premium</h2>
+    <div class="price">$620</div>
+    <p>Para negocios que venden productos o servicios online.</p>
+    <ul>
+      <li>✔ Tienda online o web avanzada</li>
+      <li>✔ Carrito de compras</li>
+      <li>✔ Diseño personalizado</li>
+      <li>✔ Escalable a futuro</li>
+    </ul>
+    <a href="https://wa.me/15027942412" target="_blank">Contáctanos</a>
+  </div>
+
+</section>
+
+</main>
+
+<a class="whatsapp" href="https://wa.me/15027942412" target="_blank">💬</a>
+
+<!-- GOOGLE TRANSLATE -->
+<script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({
+    pageLanguage:'es',
+    includedLanguages:'es,en',
+    layout:google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
